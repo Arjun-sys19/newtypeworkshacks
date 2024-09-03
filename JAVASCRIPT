@@ -25,7 +25,8 @@ function submitJoinForm() {
 
 // Event listener to close the modal when clicking outside the content
 window.onclick = function(event) {
-    if (event.target === document.getElementById('joinModal')) {
+    const modal = document.getElementById('joinModal');
+    if (event.target == modal) {
         closeJoinModal();
     }
 }
