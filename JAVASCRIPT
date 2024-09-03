@@ -1,0 +1,31 @@
+// Function to open the join modal
+function openJoinModal() {
+    document.getElementById('joinModal').style.display = 'flex';
+}
+
+// Function to close the join modal
+function closeJoinModal() {
+    document.getElementById('joinModal').style.display = 'none';
+}
+
+// Function to handle form submission
+function submitJoinForm() {
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const details = document.getElementById('details').value;
+
+    if (username && email && details) {
+        alert('Thank you for joining the Student Innovation Club!');
+        closeJoinModal();
+        // You can also add code here to handle form submission to a server
+    } else {
+        alert('Please fill out all fields.');
+    }
+}
+
+// Event listener to close the modal when clicking outside the content
+window.onclick = function(event) {
+    if (event.target === document.getElementById('joinModal')) {
+        closeJoinModal();
+    }
+}
