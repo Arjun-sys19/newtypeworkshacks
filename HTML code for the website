@@ -5,165 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Innovation Club</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+    <script defer src="script.js"></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 </head>
 <body>
+
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Student Innovation Club</a>
+            <h1 class="logo">Student Innovation Club</h1>
             <ul class="nav-links">
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#why-join">Why Join Us?</a></li>
-                <li><a href="#events">Upcoming Events</a></li>
-                <li><a href="#join">How to Join</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-join">Why Join?</a></li>
+                <li><a href="#events">Events</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Ignite Your Creativity. Shape the Future.</h1>
             <p>Join a community where ideas flourish and technology meets imagination.</p>
-            <a href="#join" class="cta-button">Join Us Now</a>
+            <button class="cta-button" onclick="openJoinModal()">Join Us Now</button>
         </div>
-    </header>
+    </div>
 
     <!-- About Us Section -->
-    <section id="about" class="section-about">
+    <section id="about" class="about-us-section">
         <div class="container">
-            <div class="about-content">
-                <h2>About Us</h2>
-                <p>The Student Innovation Club is dedicated to fostering creativity, technology, and leadership among students. We work on innovative projects, provide learning opportunities, and create a supportive community.</p>
-                <div class="about-stats">
-                    <div class="stat">
-                        <i class="fas fa-users"></i>
-                        <h3>500+</h3>
-                        <p>Members</p>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>50+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-calendar-alt"></i>
-                        <h3>30+</h3>
-                        <p>Events Held</p>
-                    </div>
-                </div>
-            </div>
+            <h2>About Us</h2>
+            <p>Welcome to the Student Innovation Club, where innovation meets passion. Our mission is to foster creativity and technological advancement among students through collaborative projects and workshops.</p>
+            <img src="https://source.unsplash.com/800x400/?students,technology" alt="About Us Image" class="about-image">
         </div>
     </section>
 
     <!-- Why Join Us Section -->
-    <section id="why-join" class="section-why-join">
+    <section id="why-join" class="why-join-us-section">
         <div class="container">
             <h2>Why Join Us?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
+            <div class="benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-lightbulb"></i>
                     <h3>Skill Development</h3>
                     <p>Participate in workshops and hands-on projects to enhance your skills.</p>
                 </div>
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
+                <div class="benefit-item">
+                    <i class="fas fa-network-wired"></i>
                     <h3>Networking</h3>
                     <p>Connect with industry experts and fellow innovators.</p>
                 </div>
-                <div class="benefit">
-                    <div class="benefit-icon">
-                        <i class="fas fa-leadership"></i>
-                    </div>
+                <div class="benefit-item">
+                    <i class="fas fa-user-tie"></i>
                     <h3>Leadership Opportunities</h3>
-                    <p>Take charge of projects and lead teams to achieve great results.</p>
+                    <p>Take charge of projects and lead teams to achieve common goals.</p>
                 </div>
             </div>
-            <blockquote>
-                <p>"Being part of the Student Innovation Club has been a transformative experience. I've gained invaluable skills and connections!" - Current Member</p>
-            </blockquote>
         </div>
     </section>
 
-    <!-- Upcoming Events/Activities Section -->
-    <section id="events" class="section-events">
+    <!-- Upcoming Events Section -->
+    <section id="events" class="events-section">
         <div class="container">
             <h2>Upcoming Events</h2>
-            <div class="events-list">
-                <div class="event">
-                    <div class="event-date">
-                        <span class="month">Oct</span>
-                        <span class="day">15</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Annual Hackathon</h3>
-                        <p>Join us for a 24-hour coding marathon to tackle real-world challenges.</p>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="event-date">
-                        <span class="month">Nov</span>
-                        <span class="day">22</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Guest Speaker Series</h3>
-                        <p>Attend talks by industry experts and innovators.</p>
-                    </div>
-                </div>
+            <div class="event-item">
+                <h3>Hackathon 2024</h3>
+                <p>Join us for an exciting 48-hour hackathon where you can build innovative projects and win amazing prizes!</p>
             </div>
-            <a href="#events-list" class="cta-button">See All Events</a>
+            <div class="event-item">
+                <h3>Innovation Challenge</h3>
+                <p>Participate in our annual Innovation Challenge and showcase your creative solutions to real-world problems.</p>
+            </div>
+            <button class="cta-button">See All Events</button>
         </div>
     </section>
 
-    <!-- How to Join Section -->
-    <section id="join" class="section-join">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2>How to Join</h2>
-            <p>Becoming a member of the Student Innovation Club is easy! Follow these steps:</p>
-            <ol>
-                <li>Fill out our <a href="https://example.com/application-form" target="_blank">online application form</a>.</li>
-                <li>Attend an orientation session to meet fellow members and learn about upcoming projects.</li>
-                <li>Start participating in our events and projects, and make the most of your membership.</li>
-            </ol>
-            <p>For any questions, feel free to <a href="#contact">contact us</a>.</p>
-        </div>
-    </section>
-
-    <!-- Contact Information Section -->
-    <section id="contact" class="section-contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-details">
-                <p>Email: <a href="mailto:info@studentinnovationclub.org">info@studentinnovationclub.org</a></p>
-                <p>Follow us on social media:</p>
-                <ul class="social-media">
-                    <li><a href="https://facebook.com/studentinnovationclub" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com/studentinnoclub" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com/studentinnovationclub" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
+            <h2>What Our Members Say</h2>
+            <div class="testimonial-item">
+                <p>"Joining the Student Innovation Club was one of the best decisions I've made. I've learned so much and met amazing people!"</p>
+                <h4>- Alex Johnson</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"The opportunities to work on real-world projects and network with professionals have been incredible. Highly recommend it!"</p>
+                <h4>- Jamie Smith</h4>
             </div>
         </div>
     </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Ready to Innovate? Join the Student Innovation Club Today!</h2>
+            <p>Sign up now to be part of a community that shapes the future.</p>
+            <button class="cta-button" onclick="openJoinModal()">Join Us Now</button>
+        </div>
+    </div>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <p>&copy; 2024 Student Innovation Club. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#join">Join Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@studentinnovationclub.org</p>
+                    <p>Follow us on social media: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">LinkedIn</a></p>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#why-join">Why Join?</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="legal-info">
+                <p>&copy; 2024 Student Innovation Club. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Join Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeJoinModal()">&times;</span>
+            <h2>Join the Student Innovation Club</h2>
+            <form onsubmit="submitJoinForm(); return false;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="details">Why do you want to join?</label>
+                <textarea id="details" name="details" required></textarea><br><br>
+                
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
+
