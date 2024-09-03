@@ -54,17 +54,16 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('https://source.unsplash.com/1600x900/?technology,innovation');
+    position: relative;
+    height: 80vh;
+    background-image: url('https://source.unsplash.com/1600x900/?technology,students');
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 100vh;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     text-align: center;
-    position: relative;
 }
 
 .hero-overlay {
@@ -74,6 +73,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero-content {
@@ -82,15 +82,13 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    animation: fadeInDown 1s ease-in-out;
+    font-size: 3rem;
+    margin: 0;
 }
 
 .hero-content p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin: 20px 0;
 }
 
 .cta-button {
@@ -202,6 +200,29 @@ body {
 
 .event-item p {
     font-size: 1.2rem;
+}
+
+/* How to Join Section */
+.how-to-join-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.how-to-join-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.how-to-join-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.how-to-join-section ol {
+    list-style: decimal inside;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Testimonials Section */
